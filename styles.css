@@ -1,0 +1,136 @@
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: Lato, sans-serif;
+  font-size: 12px;
+  color: #fff;
+  background-color: #4E6070;
+}
+h1 {
+  font-size: 4em;
+  letter-spacing: -2px;
+}
+a {
+  color: #fff;
+}
+article {
+  width: 90%;
+  padding: 5px 10px;
+  margin: auto;
+  font-size: 1.5em;
+}
+article > h3 {}
+.header {
+  display: block;
+  min-height: 300px;
+  width: 100%;
+  text-align: center;
+  font-weight: 800;
+  text-shadow: 1px 2px 1px rgba(0, 0, 0, .6);
+  margin: auto;
+}
+.header-background {
+  background: url(lake.jpg) no-repeat fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-weight: 800;
+  text-shadow: 1px 2px 1px rgba(0, 0, 0, .6);
+  margin: auto;
+  overflow: hidden;
+}
+.header-background-2{
+  background: url(https://images.unsplash.com/photo-1444090542259-0af8fa96557e?dpr=2&fit=crop&fm=jpg&h=625&ixlib=rb-0.3.5&q=50&w=1300) no-repeat fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-weight: 800;
+  text-shadow: 1px 2px 1px rgba(0, 0, 0, .6);
+  margin: auto;
+  overflow: hidden;
+}
+.header-gif {
+  background: url(happy-elephant.gif) no-repeat fixed;
+  background-size: cover;
+  font-weight: 800;
+  text-shadow: 1px 2px 1px rgba(0, 0, 0, .6);
+  margin: auto;
+  overflow: hidden;
+}
+.header > p {
+  bottom: 0px;
+  font-size: 1.5em;
+}
+
+.footer {
+  background-color:#fff;
+  color: #4E6070;
+}
+
+div.footer-container{
+  width: 100%;
+  padding: 20px 0px 40px 0px;
+  text-align: center;
+  font-size: 3em
+}
+
+button.sure {
+  color: #fff;
+  font-size: .75em;
+  padding: 2px;
+  border-radius: 5px;
+  box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.75);
+  background-color: #4E6070;
+}
+
+.navbar > ul {
+  width: 100%;
+  list-style: none;
+}
+.navbar > li {
+  display: inline;
+  width: 50%;
+  font-size: 2em;
+  border: 1px solid #fff;
+}
+.navbar > li > a {
+  text-decoration: none;
+  padding: 20px
+}
+
+/*Animations*/
+
+@keyframes spin {
+  0% {
+    background-color: red;
+  }
+  25% {
+    background-color: yellow;
+  }
+  50% {
+    background-color: blue;
+  }
+  100% {
+    background-color: green;
+  }
+}
+
+/* The element to apply the animation to */
+
+spin {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: spin;
+  animation-duration: 4s;
+}
+
+/* Media Queries*/
+
+@media (min-width: 800px) and (max-width: 5000px) {
+  article {
+    width: 70%;
+    margin: auto;
+  }
+}
